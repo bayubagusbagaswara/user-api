@@ -1,0 +1,6 @@
+CREATE TABLE Events (
+    id SERIAL NOT NULL PRIMARY KEY,
+    type VARCHAR(50) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    CONSTRAINT UQ_Events_Type UNIQUE (type)
+);
